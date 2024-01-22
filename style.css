@@ -1,0 +1,236 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #030637;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(28, 28, 88);
+}
+
+nav div.right ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav div.right ul li {
+    list-style: none;
+    margin: 0 26px;
+}
+
+nav div.right ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav div.right ul li a:hover {
+    color: #bb2af9;
+    font-size: 1.5rem;
+    cursor: grab;
+}
+
+nav div.left {
+    font-size: 2rem;
+    color: #bb2af9;
+}
+
+nav div.left:hover {
+    font-size: 3rem;
+    color: #bb2af9;
+    cursor: pointer;
+}
+
+main section div.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+main section div.firstSection div.leftSection {
+    font-size: 2rem;
+}
+
+main section div.firstSection div.leftSection span.purpal {
+    color: #bb2af9;
+}
+
+span#element {
+    color: #bb2af9;
+}
+
+main section div.firstSection div.leftSection div.button button.btn {
+    padding: 12px;
+    background-color: #bb2af9;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid wheat;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+main section div.firstSection div.leftSection div.button button.btn a {
+    color: #fff;
+}
+
+
+main section div.firstSection div.rightSection img {
+    width: 70%;
+    border-radius: 20%;
+}
+
+
+main hr {
+    border: 0;
+    background-color: #bb2af9;
+    height: 2px;
+    margin: 40px 84px;
+}
+
+section.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+section.secondSection span.text-gray {
+    color: grey;
+}
+
+
+
+section.secondSection h1 {
+    font-size: 2rem;
+}
+
+section.secondSection div.box {
+    background-color: #fff;
+    width: 80vw;
+    height: 3px;
+    margin: 56px 0;
+    display: flex;
+}
+
+section.secondSection div.box div.vertical {
+    background-color: #fff;
+    height: 93px;
+    width: 2px;
+    margin: 0 6vw;
+}
+
+section.secondSection div.box div.vertical img.imege-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+section.secondSection div.box div.vertical div.vertical-tital {
+    position: relative;
+    top: 75px;
+    width: 150px;
+    font-size: 10px;
+}
+
+section.secondSection div.box div.vertical div.vertical-desc {
+    position: relative;
+    top: 86px;
+    width: 150px;
+    color: gray;
+    font-size: 9px;
+}
+
+section.secondSection div.box div.vertical div.vertical-desc a {
+    color: white;
+}
+
+footer {
+    background-color: #0e0e1a;
+}
+
+footer div.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+footer div.footer ul {
+    list-style: none;
+}
+
+footer div.footer-rights {
+    text-align: center;
+    color: gray;
+}
+
+@media screen and (max-width:1250px) {
+    
+    body {
+        min-width: fit-content;
+    }
+
+    section.secondSection div.box {
+        flex-direction: column;
+        width: 50vw;
+    }
+
+    section.secondSection div.box div.vertical {
+        height: unset;
+    }
+
+    section.secondSection div.box div.vertical div.vertical-tital,
+    section.secondSection div.box div.vertical div.vertical-desc {
+        left: 45px;
+        top: 2px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    main section div.firstSection {
+        flex-direction: column-reverse;
+    }
+
+    main section div.firstSection div.leftSection {
+        width: 100% !important;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section div.firstSection div.rightSection {
+        width: 290px !important;
+    }
+
+    section.secondSection {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 120vh;
+    }
+
+    section.secondSection div.box div.vertical img.imege-top {
+        width: 50px;
+        position: relative;
+        top: 40px;
+        left: -25px;
+    }
+
+}
